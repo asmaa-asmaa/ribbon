@@ -1,0 +1,39 @@
+.product {
+    width:400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: grey;
+    text-align: center;
+
+}
+.product h2 {
+    margin:0 0 20px;
+    color:white;
+    background-color: rgb(9, 117, 117);
+    padding: 15px;
+    width: calc(100% + 70px);
+    position: relative;
+    left:-50px;
+}
+.product h2::before {
+    content: "";
+    border-width:15px;
+    border-color: rgb(3, 56, 56) rgb(3, 56, 56) transparent transparent;
+    border-style: solid;
+    position: absolute;
+    left:0;
+    bottom: -30px;
+}
+.product h2::after {
+    content: "";
+    border-width:15px;
+    border-color: rgb(3, 56, 56) transparent transparent rgb(3, 56, 56);
+    border-style: solid;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+
+}
+.product p {
+    line-height: 1.6;
+}
